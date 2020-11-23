@@ -1,285 +1,255 @@
-Answer to the question No: 1
+Answer to the question no - 1:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int in, n= -1;
+
+    do
+    {
+        cout<<"Enter any integer number: ";
+        cin>>in;
+        if(in != n)
+        {
+            cout<<"The input number was: "<<in<<endl<<endl;
+        }
+    }
+    while(in!= n);
+    {
+        cout<<"The programming is end. Because, you gave me this number: "<<in<<endl<<endl;
+    }
+    return 0;
+}
+
+Answer to the question no - 2:
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main()
+{
+    char in= ' ';
+    char n='#';
+    do
+    {
+        cout<<"Enter any character: ";
+        cin>>in;
+        {
+            cout<<"The input character was: "<<in<<endl<<endl;
+        }
+    }
+    while(in!= n);
+    {
+        cout<<"The programming is end. Because, you gave me this character: "<<in<<endl<<endl;
+    }
+    return 0;
+}
+
+
+Answer to the question no - 3:
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    cout<<"The even number is: ";
+    for (int i = 10; i <= 20; i++)
+    {
+        if(i%2 == 0)
+        {
+            cout<<i<<" ";
+        }
+    }
+    return 0;
+}
+
+Answer to the question no - 4:
 #include<iostream>
 using namespace std;
 int main ()
 {
- int a;
- while (1)
- {
- cin>> a;
- if(a==-1)
- {
- break;
- }
- else
- {
- continue;
- }
- }
-return 0;
+    float i=2.00, x=4.00;
+    for( i=2.00; i<=x ; i+=0.25)
+    {
+        if (i<x)
+        {
+            cout<<i<<", ";
+        }
+        else
+        {
+            cout <<x;
+        }
+    }
+    return 0;
 }
-Answer to the question No: 2
+
+Answer to the question no - 5:
 #include<iostream>
 using namespace std;
+
+void Odd(int x, int y)
+{
+    for(int i=x; i<=y; i++)
+    {
+        if(i % 2 != 0)
+        {
+            if(i==y || i== y-1)
+            {
+                cout<<i<<" ";
+            }
+            else
+                cout<<i<<", ";
+        }
+    }
+}
+
 int main ()
 {
- char a;
- while (1)
- {
- cin>> a;
- if(a=='.')
- {
- break;
- }
- else
- {
- continue;
- }
- }
-return 0;
+    int x, y;
+    cout<<"Enter the 1st digit: ";
+    cin>>x;
+    cout<<"Enter the 2nd digit: ";
+    cin>>y;
+    if(x == y)
+    {
+        cout<<"Nothing";
+    }
+    else
+        Odd(x, y);
+
+    return 0;
 }
-Answer to the question No: 3
+
+
+Answer to the question no - 6:
+#include <iostream>
+using namespace std;
+
+void patten(int in)
+{
+ for (int r=in; r>=1; r=r-2)
+    {
+        for (int c=in; c>=1; c--)
+        {
+            if(r >= c)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<endl;
+    }
+}
+
+int main()
+{
+    int in;
+    cout <<" Enter  any digit: ";
+    cin >> in;
+    patten(in);
+
+    return 0;
+}
+
+Answer to the question no - 7:
 #include<iostream>
 using namespace std;
 int main()
 {
- for (int i=0;i<100;i=i+0.25)
- {
- if (i<99)
- {
- cout << i<< ",";
- }
- else if (i==99)
- {
- cout << i;
- }
- }
- return 0;
+    int sum=0;
+
+    for(int i=1; i<=100; i++)
+    {
+        sum = sum + i;
+        if (i<100)
+        {
+            cout<<i<<" + ";
+        }
+        else
+            cout<<i<<" = ";
+    }
+    cout<<sum;
+
+    return 0;
 }
-Answer to the question No: 4
+
+
+
+Answer to the question no - 8:
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void display(int n, float sum, float result)
+{
+    for(int i=2; i<=n; i++)
+    {
+        result = 1/sqrt(i);
+        sum = sum + result;
+    }
+    cout<<"Result is: "<<1+sum;
+}
+
+int main() 
+{
+    int n;
+    float sum=0, result;
+    cout<<"Enter any digit: ";
+    cin>>n;
+    display(n, sum, result);
+
+    return 0;
+}
+
+
+
+
+Answer to the question no - 9:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int in, x;
+    int cnt=0;
+    cout<<"Enter the number: ";
+    cin >>in;
+    x = in;
+    while(x != 0)
+    {
+        cnt++;
+        x /= 10;
+    }
+    cout<<endl<<"Number of digits: "<<cnt<<endl;
+
+    return 0;
+}
+
+Answer to the question no - 10:
 #include<iostream>
 using namespace std;
-int main ()
+
+int main()
 {
- for (float i=2;i<=4;i=i+0.25)
- {
- if (i<4)
- {
- cout << i<< ",";
- }
- else if (i==4)
- {
- cout << i;
- }
- }
- return 0;
-}
-Answer to the question No: 5
-#include<iostream>
-using namespace std;
-int main ()
-{
- for (char i='a';i<=122;i++)
- {
- if (i<122)
- {
- cout << i<< ",";
- }
- else if (i==122)
- {
- cout << i;
- }
- }
- return 0;
-}
-Answer to the question No: 6
-#include<iostream>
-using namespace std;
-int main ()
-{
- for (int i=1; i<=73; i++)
- {
- if (i%2!=0)
- {
- if (i<73)
- {
- cout << i<< ",";
- }
- else if (i==73)
- {
- cout<< i;
- }
- }
- }
- return 0;
-}
-Answer to the question No: 7
-#include<iostream>
-using namespace std;
-int main ()
-{
- int a,b;
- cin>> a>> b;
- for (int i=a; i<=b;i++)
- {
- if (i<b)
- {
- cout << i<< ",";
- }
- else if (i==b)
- {
- cout << i;
- }
- }
- return 0;
-}
-Answer to the question No: 8
-#include<iostream>
-using namespace std;
-int main ()
-{
- int a,b;
- cin>> a>> b;
- for (int i=a; i<=b;i++)
- {
- if (i%2!=0)
- {
- if (i<b)
- {
- cout << i<< ",";
- if (b%2!=0)
- {
- if (i==b)
- {
- cout << i;
- }
- }
- else if (b%2==0)
- {
- if (i==b-1)
- {
- cout << i;
- }
- }
- }
- }
- }
- return 0;
-}
-Answer to the question No: 9
-#include<iostream>
-using namespace std;
-int main ()
-{
- int n;
- cin >>n;
- for (int i=1;i<=n;i++)
- {
- cout <<"* ";
- }
- return 0;
-}
-Answer to the question No: 10
-#include<iostream>
-using namespace std;
-int main ()
-{
- int n=0;
- for (int i=1;i<=100;i++)
- {
- n=n+i;
- if (i<100)
- {
- cout << i<< "+";
- }
- else if (i==100)
- {
- cout << i<< "=";
- }
- }
- cout << n<< endl;
- return 0;
-}
-Answer to the question No: 11
-#include<iostream>
-using namespace std;
-int main ()
-{
- int n=0;
- for (int i=2;i<=1024;i=i*2)
- {
- n=n+i;
- if (i<1024)
- {
- cout << i<< "+";
- }
- else if (i==1024)
- {
- cout << i<< "=";
- }
- }
- cout << n<< endl;
- return 0;
-}
-Answer to the question No: 12
-#include<iostream>
-using namespace std;
-int main ()
-{
- long long n;
- int cont=0;
- cin >> n;
- while (n!=0)
- {
- n=n/10;
- cont++;
- }
- cout << cont<< endl;
- return 0;
-}
-Answer to the question No: 13
-#include<iostream>
-using namespace std;
-int main ()
-{
- long long n,rev=0;
- cin >> n;
- while (n!=0)
- {
- rev = rev * 10;
- rev = rev + n%10;
- n = n/10;
- }
- cout << rev<< endl;
- return 0;
-}
-Answer to the question No: 14
-#include<iostream>
-using namespace std;
-int main ()
-{
- int x,y;
- cin>>x>>y;
- for (int i=x;i<=y;i++)
- {
- if (i%7==0)
- {
- cout <<i<< ",";
- }
- }
- return 0;
-}
-Answer to the question No: 15
-#include<iostream>
-using namespace std;
-int main ()
-{
- float n,avg=0;
- for (int i=1;i<=10;i++)
- {
- cin>> n;
- avg =avg+n;
- }
- cout << "Average: "<< avg/10<< endl;
- return 0;
+    int x, sum=0, evn=0;
+    float avg=0;
+
+    cout<<"Enter any 5 digit: "<<endl;
+    for(int i=1; i<=5; i++)
+    {
+        cin>>x;
+        if( x % 2 == 0 )
+        {
+            sum+=x;
+            evn++;
+        }
+    }
+    avg = float(sum)/evn;
+    cout<<"Average for even numbers: "<<avg;
+
+    return 0;
 }
