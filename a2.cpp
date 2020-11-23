@@ -1,21 +1,20 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main()
+int main ()
 {
-cout<<"Enter radius";
-float radius;
-cin >> radius;
-float pi = 3.1415926535897;
-
-//Area of a circle
-float area = pi*radius*radius;
-
-//Circumference of a circle
-float circum = 2*pi*radius;
-
-cout<<"Area of the circle is"<<area<<endl;
-cout<<"Circumference of the circle is"<<circum<<endl;
-
-return 0;
-}
-a 
+ int num;
+ cin>> num;
+ if (num<0)
+ {
+ cout << " the number is Negative"<< endl;
+ }
+ else if (num>0)
+ {
+ cout << " The number is Positive"<< endl;
+ }
+ else 
+ {
+ cout << "Neither positive or negative"<< endl;
+ }
+ return 0;
+ }

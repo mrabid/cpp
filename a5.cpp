@@ -4,13 +4,13 @@ int main ()
 {
  int num;
  cin>> num;
- if (num%2==0)
+ if (num%3==0 &&num%5==0)
  {
- cout << num << " Even "<< endl;
+ cout << "Divisible by 3 and 5"<< endl;
  }
  else
  {
- cout << num << " Odd "<< endl;
+ cout<< "Not divisible by 3 and 5"<< endl;
  }
  return 0;
- }
+}
