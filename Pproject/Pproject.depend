@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1593233246 source:c:\users\asus\desktop\c++ practice\project\pproject\main.cpp
+	<iostream>
+	"pclass.h"
+
+1593233602 source:c:\users\asus\desktop\c++ practice\project\pproject\pclass.cpp
+	"pclass.h"
+	<iostream>
+
+1593233286 c:\users\asus\desktop\c++ practice\project\pproject\pclass.h
+	"pclass.h"
+
+1593237893 source:d:\c++ practice\project\pproject\main.cpp
+	<iostream>
+	"pclass.h"
+
+1593237893 d:\c++ practice\project\pproject\pclass.h
+	"pclass.h"
+
+1593237893 source:d:\c++ practice\project\pproject\pclass.cpp
+	"pclass.h"
+	<iostream>
+
